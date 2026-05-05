@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerSearch AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="google-style-container">
+        <header class="search-header">
+            <h1 class="logo">Career<span>Search</span></h1>
+            <div class="search-bar-wrapper">
+                <input type="text" id="job-input" placeholder="Search a job role (e.g. Manager, Developer)..." autofocus>
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+
+        <main id="results-area" class="hidden">
+            <section class="analysis-box">
+                <div class="result-card">
+                    <h3>🎯 Essential Skills</h3>
+                    <ul id="skill-list"></ul>
+                </div>
+                <div class="result-card">
+                    <h3>🛠️ Professional Tools</h3>
+                    <ul id="tool-list"></ul>
+                </div>
+                <div class="result-card">
+                    <h3>🌐 Recommended Websites</h3>
+                    <ul id="web-list"></ul>
+                </div>
+            </section>
+
+            <section class="resume-preview">
+                <div class="resume-header">
+                    <h2>Resume Template</h2>
+                    <button class="btn-small" onclick="window.print()">Save as PDF</button>
+                </div>
+                <div class="resume-paper" id="resume-paper"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
